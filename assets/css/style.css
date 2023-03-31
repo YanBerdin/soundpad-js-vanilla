@@ -1,0 +1,82 @@
+/*
+  CSS Reset
+  heavily inspired by https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+/*
+  Theme
+*/
+
+html {
+  font: 1.25em/1.75 system-ui, sans-serif;
+}
+
+body {
+  color-scheme: dark;
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+/*
+  Components
+*/
+
+.pads {
+  height: 100%;
+  display: grid;
+}
+@media (max-width: 767.98px) {
+  .pads {
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-content: center;
+  }
+}
+@media (min-width: 768px) {
+  .pads {
+    max-width: 44rem;
+    padding: 3vw;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3vw;
+    align-content: center;
+  }
+}
+
+.pads > div {
+  border: .2rem solid #8b949e;
+  color: #c9d1d9;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  aspect-ratio: 1;
+  font-weight: 600;
+  user-select: none;
+}
+
+.pads > div:hover {
+  color: #7ee787;
+  border-color: currentColor;
+}
+
+.pads > div:active {
+  border-color: transparent;
+  background-color: #7ee787;
+  color: #033a16;
+  box-shadow: 0 0 2rem 0px #56d364;
+}

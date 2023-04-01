@@ -38,9 +38,29 @@ const soundboard = {
    */
   definePads: function() {
     // TODO 2
-    // soundboard.kickElement = ...
+     soundboard.kickElement = pad1;
     // soundboard.hihatElement = ...
     // etc
+// on souhaite sélectionner les éléments ayant la classe pad-1
+const kickElement = document.getElementsByClassName('pad-1');
+console.log(pad1); // tableau indexé (HTMLCollection)
+
+const hihatAudio = document.getElementsByClassName('pad-2');
+console.log(pad2);
+
+const snareAudio = document.getElementsByClassName('pad-3');
+console.log(pad3);
+
+const wobbleAudio = document.getElementsByClassName('pad-4');
+console.log(pad4);
+
+const pavocalAudio = document.getElementsByClassName('pad-5');
+console.log(pad5);
+
+const scratchAudio = document.getElementsByClassName('pad-6');
+console.log(pad6);
+
+
   },
 
   /**

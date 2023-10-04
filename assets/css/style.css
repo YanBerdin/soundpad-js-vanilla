@@ -74,7 +74,8 @@ body {
   border-color: currentColor;
 }
 
-.pads > div:active {
+.active,
+.pads > div:active { /* lien activé */
   border-color: transparent;
   background-color: #7ee787;
   color: #033a16;

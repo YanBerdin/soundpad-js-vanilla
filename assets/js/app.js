@@ -17,4 +17,6 @@ const app = {
  */
 // TODO 1
 
-
+document.addEventListener('DOMContentLoaded', app.init);
+// On place un écouteur d'événement sur le document en entier
+// cet écouteur d'événement déclenche la méthode init de app quand tout le DOM est chargé

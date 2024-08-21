@@ -1,4 +1,4 @@
-# o'soundboard
+# soundpad
 
 Depuis notre plus tendre enfance, on adore appuyer sur des boutons pour faire des bruits.
 
@@ -44,6 +44,7 @@ handleKeyboard: function(event) {
   if (event.key === 'd') { soundboard.scratchElement.click(); }
 },
 ```
+
 </details>
 
 Puis, dans la méthode `attachEvents`, créer un écouteur d'évènement global, via `document.addEventListener` qui écoutera l'évènement de type `"keydown"` et qui exécutera la nouvelle méthode `soundboard.handleKeyboard`

@@ -1,21 +1,24 @@
 # Révisions JS
 
 ## Les variables
+
 > Notions : let, const, camelCase
 
 [Mdn : let](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/let)
-
 
 ```js
 let maVariable = "quelque chose";
 maVariable = 12;
 ```
+
 [Mdn : const](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/const)
+
 ```js
 const maConstante = "Une valeur fixe";
 ```
 
 ### Les types
+
 > Notions : int, float, string, bool
 
 [Mdn : Types et structures de données](https://developer.mozilla.org/fr/docs/Web/JavaScript/Data_structures)
@@ -31,9 +34,11 @@ valeur = false;
 ```
 
 ## Les tableaux
+
 > Notions : index, clé
 
 ### Tableau indexé
+
 > Notions : déclaration, manipulation, lecture
 
 [Mdn : Tableau](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array)
@@ -46,6 +51,7 @@ let valeurDeux = monTableau[1];
 ```
 
 ### Tableau associatif (objets)
+
 > Notions : déclaration, manipulation, lecture
 
 [Mdn : Utiliser les objets](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Working_with_Objects#indexing_object_properties)
@@ -60,8 +66,8 @@ monTabAsso.encorecle = true;
 la valeurCle = monTabAsso.cle;
 ```
 
-
 ## Les boucles
+
 > for, for of, for in
 
 [Mdn : for](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/for)
@@ -69,6 +75,7 @@ la valeurCle = monTabAsso.cle;
 [Mdn : les autres boucles](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/for#voir_aussi)
 
 ### for
+
 > Exécute une série d'instructions plusieurs fois
 
 ```js
@@ -77,8 +84,8 @@ for (let i = 0; i < 42; i++) {
 }
 ```
 
-
 ### for of
+
 > Parcours le tableau et fournit l'élément à chaque itération, ne fonctionne pas avec un tableau associatif
 
 ```js
@@ -95,6 +102,7 @@ for (const element of monTableau) {
 ```
 
 ### for in
+
 > Parcours le tableau et fournit l'index à chaque itération, ou la clé pour un objet
 
 ```js
@@ -116,8 +124,8 @@ for (const property in monTabAsso) {
 }
 ```
 
-
 ## Les fonctions
+
 > Notions : déclaration, arguments, retour, appel
 
 [Mdn : les fonctions](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/function)
@@ -131,8 +139,8 @@ function maFonction(argument1, argument2) {
 const valeur = maFonction(2, 65);
 ```
 
-
 ## Les conditions
+
 > Notions : utilisation, opérateurs
 
 [Mdn : Prendre des décisions dans le code](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Building_blocks/conditionals)
@@ -152,6 +160,7 @@ else {
 ```
 
 ### Opérateurs logiques
+
 ```js
 if ( valeur === 12 ) {
     console.log("valeur est strictement égal à 12 (valeur et type)");
@@ -170,6 +179,7 @@ if ( valeur >= 12 ) {
 ```
 
 ### Opérateurs de comparaison
+
 ```js
 if ( valeur === 12 || valeur === true ) {
     console.log("valeur est égal à 12 OU est vrai");
@@ -188,8 +198,8 @@ if ( !valeur ) {
 }
 ```
 
-
 ## Le DOM
+
 > Notions : sélection d'un élément HTML, manipulation, intéractions, création
 
 ### Sélection
@@ -206,7 +216,6 @@ if ( !valeur ) {
     <div class="class-de-noeuds">4</div>
 </main>
 ```
-
 
 ```js
 // Récupère un noeud avec son id
@@ -249,7 +258,8 @@ node1.removeAttribute('role');
 node1.remove();
 ```
 
-### Intéractions 
+### Intéractions
+
 ```html
 <button id="go">GO</button>
 ```
@@ -273,6 +283,7 @@ btnGo.addEventListener('click', handleButtonClick);
 ```
 
 ### Création
+
 ```html
 <div class="container"> 
     <!-- <span class="span-class">Texte du span</span> -->
@@ -281,6 +292,7 @@ btnGo.addEventListener('click', handleButtonClick);
 ```
 
 ```js
+
 // Création d'un élément de toute pièce
 const newElt = document.createElement('span');
 newElt.classList.add('span-class')
@@ -292,8 +304,8 @@ const ctn = document.querySelector('.container');
 ctn.append(newElt);
 ```
 
-
 ## Modules (presque POO)
+
 > Notions : déclaration, utilisation
 
 [Mdn : Les bases de JavaScript, orienté objet](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Objects/Basics)
